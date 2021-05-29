@@ -1,4 +1,4 @@
-package pl.mateusz.demo;
+package pl.mateusz.demo.Buffet;
 
 public class CinemaReq {
     public String place;

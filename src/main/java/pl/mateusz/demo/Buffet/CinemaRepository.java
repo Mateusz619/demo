@@ -1,4 +1,4 @@
-package pl.mateusz.demo;
+package pl.mateusz.demo.Buffet;
 
 
 import org.springframework.data.repository.CrudRepository;

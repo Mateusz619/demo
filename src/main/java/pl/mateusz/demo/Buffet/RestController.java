@@ -1,4 +1,4 @@
-package pl.mateusz.demo;
+package pl.mateusz.demo.Buffet;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -44,12 +44,12 @@ public class RestController {
         return cinemaRepository.findById(id).get();
     }
 
-    @PostMapping("/rewq")
-    public long asd(@RequestBody CinemaReq cinemaReq){
-        Cinema cinema = new Cinema(0, cinemaReq.getPlace(), cinemaReq.getTicketPrice());
-        Cinema save = cinemaRepository.save(cinema);
-        return save.getId();
-    }
+//    @PostMapping("/rewq")
+//    public long asd(@RequestBody CinemaReq cinemaReq){
+//        Cinema cinema = new Cinema(1,"room 32",5, LocalDateTime.now(), Movies.KIDS, new Buffet( new AccessoriesStore(2,"toys"),"pop corn", "Cola"));
+//        Cinema save = cinemaRepository.save(cinema);
+//        return save.getId();
+//    }
 
 
     }
